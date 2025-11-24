@@ -1,3 +1,4 @@
+
 # CABC Simulation: Linear RGB  + Piecewise TMF 
 
 This repo reproduces a Content‑Adaptive Backlight Control (CABC) pipeline inspired by **US10199011** and adds practical engineering fixes to avoid color shifts (especially red darkening) and startup brightening. 
@@ -67,4 +68,7 @@ method3_4cases_65lut.m
 | `ENFORCE_NO_BRIGHTENING` | Algorithm cap \($s \le 1/B_{\min}$\) | true (recommended for ramps/UI) |
 
 ---
+
+=======
+# CABC
 
