@@ -160,6 +160,7 @@ while hasFrame(v_in)
 
     else
         [img_out_rgb, psnr_val] = apply_tmf_lut(frame_rgb_8bit, state, nodes_lin);
+        state = cabc_process_frame(V, state, params);
         si_history(i)   = 1/state.s_i;
         BL_history(i)   = state.BL;
         psnr_history(i) = min(psnr_val, 100);
