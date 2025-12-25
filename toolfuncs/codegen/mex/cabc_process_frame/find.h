@@ -1,0 +1,24 @@
+/*
+ * find.h
+ *
+ * Code generation for function 'find'
+ *
+ */
+
+#pragma once
+
+/* Include files */
+#include "cabc_process_frame_types.h"
+#include "rtwtypes.h"
+#include "emlrt.h"
+#include "mex.h"
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* Function Declarations */
+int32_T eml_find(const emlrtStack *sp, const emxArray_boolean_T *x,
+                 int32_T i_data[]);
+
+/* End of code generation (find.h) */

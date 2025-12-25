@@ -1,0 +1,92 @@
+[
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  apply_tmf_lut_data.c -o build/maca64/apply_tmf_lut_data.o",
+    "file": "apply_tmf_lut_data.c",
+    "output": "build/maca64/apply_tmf_lut_data.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  rt_nonfinite.c -o build/maca64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maca64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  apply_tmf_lut_initialize.c -o build/maca64/apply_tmf_lut_initialize.o",
+    "file": "apply_tmf_lut_initialize.c",
+    "output": "build/maca64/apply_tmf_lut_initialize.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  apply_tmf_lut_terminate.c -o build/maca64/apply_tmf_lut_terminate.o",
+    "file": "apply_tmf_lut_terminate.c",
+    "output": "build/maca64/apply_tmf_lut_terminate.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  apply_tmf_lut.c -o build/maca64/apply_tmf_lut.o",
+    "file": "apply_tmf_lut.c",
+    "output": "build/maca64/apply_tmf_lut.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  power.c -o build/maca64/power.o",
+    "file": "power.c",
+    "output": "build/maca64/power.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  sumMatrixIncludeNaN.c -o build/maca64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.c",
+    "output": "build/maca64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_apply_tmf_lut_api.c -o build/maca64/_coder_apply_tmf_lut_api.o",
+    "file": "interface/_coder_apply_tmf_lut_api.c",
+    "output": "build/maca64/_coder_apply_tmf_lut_api.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_apply_tmf_lut_mex.c -o build/maca64/_coder_apply_tmf_lut_mex.o",
+    "file": "interface/_coder_apply_tmf_lut_mex.c",
+    "output": "build/maca64/_coder_apply_tmf_lut_mex.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interp1.c -o build/maca64/interp1.o",
+    "file": "interp1.c",
+    "output": "build/maca64/interp1.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  eml_int_forloop_overflow_check.c -o build/maca64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/maca64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  unsafeSxfun.c -o build/maca64/unsafeSxfun.o",
+    "file": "unsafeSxfun.c",
+    "output": "build/maca64/unsafeSxfun.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  apply_tmf_lut_emxutil.c -o build/maca64/apply_tmf_lut_emxutil.o",
+    "file": "apply_tmf_lut_emxutil.c",
+    "output": "build/maca64/apply_tmf_lut_emxutil.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_apply_tmf_lut_info.c -o build/maca64/_coder_apply_tmf_lut_info.o",
+    "file": "interface/_coder_apply_tmf_lut_info.c",
+    "output": "build/maca64/_coder_apply_tmf_lut_info.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/apply_tmf_lut",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"./interface\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \".\" -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  /Applications/MATLAB_R2025a.app/extern/version/c_mexapi_version.c -o build/maca64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2025a.app/extern/version/c_mexapi_version.c",
+    "output": "build/maca64/c_mexapi_version.o"
+  }
+]

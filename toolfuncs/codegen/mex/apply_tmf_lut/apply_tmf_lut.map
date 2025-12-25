@@ -1,0 +1,13 @@
+_mexFunction
+_mexfilerequiredapiversion
+_emlrtMexFcnProperties
+_apply_tmf_lut
+_apply_tmf_lut_initialize
+_apply_tmf_lut_terminate
+_apply_tmf_lut_atexit
+_emxEnsureCapacity_real_T
+_emxFree_real_T
+_emxInit_real_T
+_emxFree_uint8_T
+_emxInit_uint8_T
+_emxEnsureCapacity_uint8_T

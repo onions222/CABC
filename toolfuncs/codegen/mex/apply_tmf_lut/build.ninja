@@ -1,0 +1,58 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maca64
+matlabdir = /Applications/MATLAB_R2025a.app
+startdir = /Users/onion/Desktop/code/CABC/toolfuncs
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx15.5 clang
+cxx = /usr/bin/xcrun -sdk macosx15.5 clang++
+linker = /usr/bin/xcrun -sdk macosx15.5 clang
+linkerxx = /usr/bin/xcrun -sdk macosx15.5 clang++
+
+cflags =  -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I "$matlabdir/toolbox/eml/externalDependency/omp/maca64/include" -DOpenMP_omp_LIBRARY="$matlabdir/sys/os/maca64/libiomp5.dylib" 
+
+cxxflags =  -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=apply_tmf_lut_mex -c -fPIC -Xpreprocessor -fopenmp -I "$matlabdir/toolbox/eml/externalDependency/omp/maca64/include" -DOpenMP_omp_LIBRARY="$matlabdir/sys/os/maca64/libiomp5.dylib" 
+
+ldflags =  -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=12.0 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -bundle   -L"$matlabdir/bin/maca64" -weak-lmx -weak-lmex -weak-lmat -lc++  -Wl,-rpath,@loader_path -o apply_tmf_lut_mex.mexmaca64 -L"$matlabdir/sys/os/maca64" -lemlrt -lcovrt -lut -lmwmathutil -lomp -fPIC -Wl,-exported_symbols_list,apply_tmf_lut.map
+
+ldxxflags =  -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=12.0 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -framework Cocoa -bundle  -stdlib=libc++ -L"$matlabdir/bin/maca64" -weak-lmx -weak-lmex -weak-lmat -L"$matlabdir/extern/bin/maca64" -weak-lMatlabDataArray  -Wl,-rpath,@loader_path -o apply_tmf_lut_mex.mexmaca64 -L"$matlabdir/sys/os/maca64" -lemlrt -lcovrt -lut -lmwmathutil -lomp -fPIC -Wl,-exported_symbols_list,apply_tmf_lut.map
+
+linkobjs = 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $linkobjs $ldflags
+
+rule linkxx
+    command = $linkerxx $in $linkobjs $ldxxflags
+
+# Build
+build $builddir/apply_tmf_lut_data.o : cc $root/apply_tmf_lut_data.c
+build $builddir/rt_nonfinite.o : cc $root/rt_nonfinite.c
+build $builddir/apply_tmf_lut_initialize.o : cc $root/apply_tmf_lut_initialize.c
+build $builddir/apply_tmf_lut_terminate.o : cc $root/apply_tmf_lut_terminate.c
+build $builddir/apply_tmf_lut.o : cc $root/apply_tmf_lut.c
+build $builddir/power.o : cc $root/power.c
+build $builddir/sumMatrixIncludeNaN.o : cc $root/sumMatrixIncludeNaN.c
+build $builddir/_coder_apply_tmf_lut_api.o : cc $root/interface/_coder_apply_tmf_lut_api.c
+build $builddir/_coder_apply_tmf_lut_mex.o : cc $root/interface/_coder_apply_tmf_lut_mex.c
+build $builddir/interp1.o : cc $root/interp1.c
+build $builddir/eml_int_forloop_overflow_check.o : cc $root/eml_int_forloop_overflow_check.c
+build $builddir/unsafeSxfun.o : cc $root/unsafeSxfun.c
+build $builddir/apply_tmf_lut_emxutil.o : cc $root/apply_tmf_lut_emxutil.c
+build $builddir/_coder_apply_tmf_lut_info.o : cc $root/interface/_coder_apply_tmf_lut_info.c
+build $builddir/c_mexapi_version.o : cc $matlabdir/extern/version/c_mexapi_version.c
+
+# Link
+build $root/apply_tmf_lut_mex.mexmaca64 : link $builddir/apply_tmf_lut_data.o $builddir/rt_nonfinite.o $builddir/apply_tmf_lut_initialize.o $builddir/apply_tmf_lut_terminate.o $builddir/apply_tmf_lut.o $builddir/power.o $builddir/sumMatrixIncludeNaN.o $builddir/_coder_apply_tmf_lut_api.o $builddir/_coder_apply_tmf_lut_mex.o $builddir/interp1.o $builddir/eml_int_forloop_overflow_check.o $builddir/unsafeSxfun.o $builddir/apply_tmf_lut_emxutil.o $builddir/_coder_apply_tmf_lut_info.o $builddir/c_mexapi_version.o 

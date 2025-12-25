@@ -1,0 +1,104 @@
+[
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  cabc_process_frame_data.c -o build/maca64/cabc_process_frame_data.o",
+    "file": "cabc_process_frame_data.c",
+    "output": "build/maca64/cabc_process_frame_data.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  rt_nonfinite.c -o build/maca64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maca64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  cabc_process_frame_initialize.c -o build/maca64/cabc_process_frame_initialize.o",
+    "file": "cabc_process_frame_initialize.c",
+    "output": "build/maca64/cabc_process_frame_initialize.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  cabc_process_frame_terminate.c -o build/maca64/cabc_process_frame_terminate.o",
+    "file": "cabc_process_frame_terminate.c",
+    "output": "build/maca64/cabc_process_frame_terminate.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  imhist.c -o build/maca64/imhist.o",
+    "file": "imhist.c",
+    "output": "build/maca64/imhist.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  warning.c -o build/maca64/warning.o",
+    "file": "warning.c",
+    "output": "build/maca64/warning.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  sumMatrixIncludeNaN.c -o build/maca64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.c",
+    "output": "build/maca64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  find.c -o build/maca64/find.o",
+    "file": "find.c",
+    "output": "build/maca64/find.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  mtimes.c -o build/maca64/mtimes.o",
+    "file": "mtimes.c",
+    "output": "build/maca64/mtimes.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_cabc_process_frame_api.c -o build/maca64/_coder_cabc_process_frame_api.o",
+    "file": "interface/_coder_cabc_process_frame_api.c",
+    "output": "build/maca64/_coder_cabc_process_frame_api.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_cabc_process_frame_mex.c -o build/maca64/_coder_cabc_process_frame_mex.o",
+    "file": "interface/_coder_cabc_process_frame_mex.c",
+    "output": "build/maca64/_coder_cabc_process_frame_mex.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  eml_int_forloop_overflow_check.c -o build/maca64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/maca64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  cabc_process_frame.c -o build/maca64/cabc_process_frame.o",
+    "file": "cabc_process_frame.c",
+    "output": "build/maca64/cabc_process_frame.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  cabc_process_frame_emxutil.c -o build/maca64/cabc_process_frame_emxutil.o",
+    "file": "cabc_process_frame_emxutil.c",
+    "output": "build/maca64/cabc_process_frame_emxutil.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  indexShapeCheck.c -o build/maca64/indexShapeCheck.o",
+    "file": "indexShapeCheck.c",
+    "output": "build/maca64/indexShapeCheck.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_cabc_process_frame_info.c -o build/maca64/_coder_cabc_process_frame_info.o",
+    "file": "interface/_coder_cabc_process_frame_info.c",
+    "output": "build/maca64/_coder_cabc_process_frame_info.o"
+  },
+  {
+    "directory": "/Users/onion/Desktop/code/CABC/toolfuncs/codegen/mex/cabc_process_frame",
+    "command": "/usr/bin/xcrun -sdk macosx15.5 clang -fno-common -arch arm64 -mmacosx-version-min=12.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/onion/Desktop/code/CABC/toolfuncs\" -I \"/Applications/MATLAB_R2025a.app/extern/include\" -I \"./interface\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=cabc_process_frame_mex -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2025a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2025a.app/sys/os/maca64/libiomp5.dylib\"  /Applications/MATLAB_R2025a.app/extern/version/c_mexapi_version.c -o build/maca64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2025a.app/extern/version/c_mexapi_version.c",
+    "output": "build/maca64/c_mexapi_version.o"
+  }
+]

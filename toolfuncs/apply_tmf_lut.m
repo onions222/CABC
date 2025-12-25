@@ -13,7 +13,7 @@ kp_srgb = ceil(linear_to_srgb(kp)*255);
 %% create lut
 tmf_lut = ones(1, 65);
 for i = 1:length(nodes_lin)
-    if nodes_lin(i) < kp
+    if nodes_lin(i) <= kp
         tmf_lut(i) = nodes_lin(i)*st_i;
     elseif nodes_lin(i) <= m
         tmf_lut(i) = nodes_lin(i)*s2+t2_i;

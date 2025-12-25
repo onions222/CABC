@@ -1,8 +1,8 @@
 clear; close all; clc;
 
 %% 第 1 步：定义仿真参数 (全局)
-VIDEO_FILE_IN = 'my_test_video.mp4'; % 
-VIDEO_FILE_OUT = 'output/rhinos_processed_HSV_Method.mp4'; 
+VIDEO_FILE_IN = 'sea.mp4'; % 
+VIDEO_FILE_OUT = 'output/sea_proc_pmod0.05_clip0.05.mp4'; 
 
 % 1. 初始化视频读取器
 try
@@ -32,6 +32,7 @@ params.alpha_fast = 0.5;
 params.alpha_slow = 0.1;
 params.s2         = 0.5;
 params.P_mod      = 0.05;
+params.clip_ratio = 0.02;
 
 % State init
 state.st_i   = 1;
@@ -49,7 +50,7 @@ psnr_history = 100*ones(1, v_in.NumFrames);
 
 % linear lut
 nodes          = linspace(0, 256, 65);
-nodes_lin      = srgb_to_linear(nodes);
+nodes_lin      = srgb_to_linear(nodes/255);
 nodes_lin(end) = 1;
 
 %% 窗口初始化
@@ -142,7 +143,7 @@ vReader.CurrentTime = 0;
 % =========================================================
 % 【修改 2】添加 Waitbar (进度条)
 % =========================================================
-% hWait = waitbar(0, '准备开始处理...', 'Name', '视频处理进度');
+hWait = waitbar(0, '准备开始处理...', 'Name', '视频处理进度');
 disp('开始后台处理...');
 
 % 6. 循环
@@ -156,11 +157,11 @@ while hasFrame(v_in)
 
     if i == 1
         % 统计信息
-        state = cabc_process_frame(V, state, params);
+        state = cabc_process_frame_mex(V, state, params);
 
     else
-        [img_out_rgb, psnr_val] = apply_tmf_lut(frame_rgb_8bit, state, nodes_lin);
-        state = cabc_process_frame(V, state, params);
+        [img_out_rgb, psnr_val] = apply_tmf_lut_mex(frame_rgb_8bit, state, nodes_lin);
+        state = cabc_process_frame_mex(V, state, params);
         si_history(i)   = 1/state.s_i;
         BL_history(i)   = state.BL;
         psnr_history(i) = min(psnr_val, 100);
@@ -187,28 +188,28 @@ while hasFrame(v_in)
         frameStruct = getframe(hFig);
         writeVideo(v_out, frameStruct);
 
-        % % 每 20 帧更新一次进度条，避免拖慢速度
-        % if mod(i, 20) == 0
-        %     % 更新 Waitbar
-        %     if isvalid(hWait)
-        %         % 计算剩余时间
-        %         elapsedTime = toc(startTime);
-        %         avgTimePerFrame = elapsedTime / i;
-        %         remainingFrames = totalFrames - i;
-        %         remainingTime = remainingFrames * avgTimePerFrame;
-        % 
-        %         waitbar(i / totalFrames, hWait, ...
-        %             sprintf('已处理: %d / %d 帧 (剩余约 %.1f 秒)', ...
-        %             i, floor(v_in.NumFrames), remainingTime));
-        %     else
-        %         % 如果用户点了进度条的取消/关闭，则停止循环
-        %         disp('进度条被关闭，停止处理。');
-        %         break;
-        %     end
-        % 
-        %     % 命令行输出
-        %     fprintf('Processing: %d / %d ...\n', i, floor(v_in.NumFrames));
-        % end
+        % 每 20 帧更新一次进度条，避免拖慢速度
+        if mod(i, 5) == 0
+            % 更新 Waitbar
+            if isvalid(hWait)
+                % 计算剩余时间
+                elapsedTime = toc(startTime);
+                avgTimePerFrame = elapsedTime / i;
+                remainingFrames = v_in.NumFrames - i;
+                remainingTime = remainingFrames * avgTimePerFrame;
+
+                waitbar(i / v_in.NumFrames, hWait, ...
+                    sprintf('已处理: %d / %d 帧 (剩余约 %.1f 秒)', ...
+                    i, floor(v_in.NumFrames), remainingTime));
+            else
+                % 如果用户点了进度条的取消/关闭，则停止循环
+                disp('进度条被关闭，停止处理。');
+                break;
+            end
+
+            % 命令行输出
+            % fprintf('Processing: %d / %d ...\n', i, floor(v_in.NumFrames));
+        end
 
     end
     i = i+1;
@@ -217,7 +218,7 @@ end
 % 清理
 close(v_out);
 delete(hFig); % 删除后台 Figure
-% if isvalid(hWait), delete(hWait); end % 删除进度条
+if isvalid(hWait), delete(hWait); end % 删除进度条
 
 disp('处理完成！视频已保存。');
 

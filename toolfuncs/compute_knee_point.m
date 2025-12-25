@@ -3,7 +3,7 @@ function [k_fb, m_index] = compute_knee_point(hist, binLocations, params)
 
 total_pixels = sum(hist);
 cdf = cumsum(hist)/total_pixels;
-clip_percent = 0.0;
+clip_percent = params.clip_ratio;
 P_mod = params.P_mod;
 
 m_index = find(cdf >= (1-clip_percent), 1, 'first');
